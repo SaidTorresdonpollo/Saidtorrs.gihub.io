@@ -1,0 +1,86 @@
+.cierre
+{
+  display: inline-block;
+}
+body
+{
+    font-family: "Volkhov", serif;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+}
+.header
+{
+  background-color: rgba(116, 112, 112, 0.274);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+.div
+{
+height: 100px;
+display: flex;
+align-items: center;
+gap: 500px;
+}
+.a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: azure;
+  font-size: 15px;
+  border: 2px solid transparent;
+ transition: .4s ease;
+}
+.a:hover
+{
+  transition: .4s ease;
+  border: 2px solid turquoise;
+color: aquamarine;
+
+}
+.encabezado
+{
+  display: inline-block;
+}
+{
+  scroll-behavior: smooth;
+}
+.Carrusel-Rotativo
+{
+ width: 1000px;
+ height: 750px;
+ margin: 50px auto 0;
+ overflow: hidden;
+}
+.Carrusel-Rotativo ul
+{
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 16s infinite alternate ease-in-out;
+}
+.Carrusel-Rotativo li
+{
+  list-style: none;
+  width: 100%;
+}
+.Carrusel-Rotativo img
+{
+  width: 100%;
+}
+@keyframes slide
+{
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+ 
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  95% {margin-left: -300%;}
+}

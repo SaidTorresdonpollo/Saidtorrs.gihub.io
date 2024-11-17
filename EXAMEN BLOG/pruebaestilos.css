@@ -1,0 +1,171 @@
+html
+.Garamond-uniquifier
+{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body
+{
+    font-family: "EB Garamond", serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+{
+    scroll-behavior: smooth;
+}
+.Carrusel-Rotativo
+{
+   width: 1000px;
+   height: 750px;
+   margin: 50px auto 0;
+   overflow: hidden;
+}
+.Carrusel-Rotativo ul
+{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+.Carrusel-Rotativo li
+{
+    list-style: none;
+    width: 100%;
+}
+.Carrusel-Rotativo img
+{
+    width: 100%;
+}
+@keyframes slide
+{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+   
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+}
+
+.fotos img
+{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.fotos > a
+
+{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.fotos a:hover img
+{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.1);
+    transition: 0.5s;
+}
+
+.lightbox
+
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 0.8s ease-in-out;
+}
+
+.lightbox img 
+{
+    width: 75vw;
+    max-height: 90vh;
+}
+
+.lightbox:target
+{
+    transform: scale(1);
+}
+
+.cerrar
+{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: rgb(255, 0, 0);
+    color: whitesmoke;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+.header
+{
+  background-color: rgba(116, 112, 112, 0.274);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+.div
+{
+height: 100px;
+display: flex;
+align-items: center;
+gap: 500px;
+}
+.a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: azure;
+  font-size: 15px;
+  border: 2px solid transparent;
+ transition: .4s ease;
+}
+.a:hover
+{
+  transition: .4s ease;
+  border: 2px solid turquoise;
+color: aquamarine;
+
+}
+.encabezado
+{
+  display: inline-block;
+}
+.cierre
+{
+  display: inline-block;
+}
